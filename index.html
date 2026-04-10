@@ -16,8 +16,70 @@
   </button>
 
   <div class="page-wrapper">
-    <aside class="sidebar" data-nav-level="root"></aside>
+    <aside class="sidebar" data-nav-level="root">
 
+      <div class="sidebar-header">
+        <div class="logo">PROJECT ARCHIVE</div>
+        <div class="project-name">プロジェクトアーカイブ</div>
+      </div>
+
+      <nav class="sidebar-nav">
+
+        <div class="nav-group">
+          <div class="nav-group-title">プロジェクト</div>
+
+          <a href="index.html" class="active">
+            <span class="material-symbols-outlined">home</span>
+            トップページ
+          </a>
+
+          <a href="#profile">
+            <span class="material-symbols-outlined">person</span>
+            自己紹介
+          </a>
+
+          <a href="#works">
+            <span class="material-symbols-outlined">work</span>
+            制作物一覧
+          </a>
+
+          <a href="#skills">
+            <span class="material-symbols-outlined">bolt</span>
+            スキルシート
+          </a>
+
+          <a href="#links">
+            <span class="material-symbols-outlined">mail</span>
+            お問い合わせ
+          </a>
+        </div>
+
+        <div class="nav-group">
+          <div class="nav-group-title">制作ドキュメント</div>
+
+          <a href="./docs/01-proposal.html">
+            <span class="nav-number">01</span>企画提案書
+          </a>
+
+          <a href="./docs/02-market-research.html">
+            <span class="nav-number">02</span>マーケットリサーチ
+          </a>
+
+          <a href="./docs/03-persona.html">
+            <span class="nav-number">03</span>ペルソナシート
+          </a>
+
+          <a href="./docs/04-sitemap.html">
+            <span class="nav-number">04</span>サイトマップ
+          </a>
+        </div>
+
+      </nav>
+
+      <div class="sidebar-footer">
+        © Project Archive
+      </div>
+    </aside>
     <main class="main-content">
       <header class="doc-header">
         <div class="doc-category">PROJECT ARCHIVE TOP</div>
@@ -31,9 +93,13 @@
 
       <div class="doc-body">
 
-        <section class="section">
-          <h2 class="section-title"><span class="section-icon"><span
-                class="material-symbols-outlined">person</span></span> プロフィール</h2>
+        <section class="section" id="profile">
+          <h2 class="section-title">
+            <span class="section-icon">
+              <span class="material-symbols-outlined">person</span>
+            </span>
+            プロフィール
+          </h2>
 
           <div class="fill-block">
             <div class="fill-label">氏名 <span class="required">必須</span></div>
@@ -64,32 +130,36 @@
           </div>
         </section>
 
-        <section class="section">
-          <h2 class="section-title"><span class="section-icon"><span
-                class="material-symbols-outlined">work</span></span> 制作物</h2>
-
-          <div class="card-grid">
-            <div class="card">
-              <div class="card-title">Webサイト</div>
-              <div class="card-text">
-                Perfume Workshop Site<br>
-                オリジナル香水の魅力を伝えることを目的に制作したLPサイトです。ブランドの世界観が伝わるデザインと、見やすく分かりやすい情報構成を意識しました。ユーザーが安心して体験を予約できるよう、導線設計にも工夫しています。<br>
-                <a href="https://202510-aw-kudo.github.io/-perfume-workshop-site-new-/" target="_blank">Webサイトを見る</a>
-              </div>
-            </div>
-
-            <div class="card">
-              <div class="card-title">Webアプリケーション</div>
-              <div class="card-text">
-                現在、Webアプリケーション開発について学習中です。JavaScriptやJava（Spring
-                Boot）の基礎を学びながら、簡単な機能を持つアプリケーション制作に取り組む予定です。将来的には、ユーザー管理やデータ処理を含むWebアプリケーションを開発できるようになることを目標としています。<br><br>
-                学習中の技術：JavaScript / Java / Spring Boot
-              </div>
+        <section class="section" id="works">
+          <h2 class="section-title">
+            <span class="section-icon">
+              <span class="material-symbols-outlined">work</span>
+            </span>
+            制作物一覧
+          </h2>
+        </section>
+        <div class="card-grid">
+          <div class="card">
+            <div class="card-title">Webサイト</div>
+            <div class="card-text">
+              Perfume Workshop Site<br>
+              オリジナル香水の魅力を伝えることを目的に制作したLPサイトです。ブランドの世界観が伝わるデザインと、見やすく分かりやすい情報構成を意識しました。ユーザーが安心して体験を予約できるよう、導線設計にも工夫しています。<br>
+              <a href="https://202510-aw-kudo.github.io/-perfume-workshop-site-new-/" target="_blank">Webサイトを見る</a>
             </div>
           </div>
+
+          <div class="card">
+            <div class="card-title">Webアプリケーション</div>
+            <div class="card-text">
+              現在、Webアプリケーション開発について学習中です。JavaScriptやJava（Spring
+              Boot）の基礎を学びながら、簡単な機能を持つアプリケーション制作に取り組む予定です。将来的には、ユーザー管理やデータ処理を含むWebアプリケーションを開発できるようになることを目標としています。<br><br>
+              学習中の技術：JavaScript / Java / Spring Boot
+            </div>
+          </div>
+        </div>
         </section>
 
-        <section class="section">
+        <section class="section" id="docs">
           <h2 class="section-title">
             <span class="section-icon">
               <span class="material-symbols-outlined">description</span>
@@ -150,41 +220,49 @@
             </div>
           </div>
         </section>
-        <section class="section">
-          <h2 class="section-title"><span class="section-icon"><span
-                class="material-symbols-outlined">bolt</span></span>
-            スキル</h2>
-
-          <div class="fill-block">
-            <div class="fill-label">技術スキル一覧 <span class="required">必須</span></div>
-            <div class="fill-content">
-              <p><strong>フロントエンド：</strong>HTML / CSS / JavaScript（学習中）</p>
-              <p><strong>バックエンド：</strong>Java（基礎・学習中）</p>
-              <p><strong>デザイン：</strong>Figma / UI・UXデザイン（基礎）</p>
-              <p><strong>その他：</strong>レスポンシブデザイン / LP制作</p>
-              <p><strong>ツール：</strong>GitHub / VS Code / ChatGPT</p>
-            </div>
-          </div>
+        <section class="section" id="skills">
+          <h2 class="section-title">
+            <span class="section-icon">
+              <span class="material-symbols-outlined">bolt</span>
+            </span>
+            スキルシート
+          </h2>
         </section>
 
-        <section class="section">
-          <h2 class="section-title"><span class="section-icon"><span
-                class="material-symbols-outlined">link</span></span>
-            リンク</h2>
-
-          <div class="fill-block">
-            <div class="fill-label">GitHub <span class="required">必須</span></div>
-            <div class="fill-content">
-              <p>https://github.com/202510-aw-kudo</p>
-            </div>
+        <div class="fill-block">
+          <div class="fill-label">技術スキル一覧 <span class="required">必須</span></div>
+          <div class="fill-content">
+            <p><strong>フロントエンド：</strong>HTML / CSS / JavaScript（学習中）</p>
+            <p><strong>バックエンド：</strong>Java（基礎・学習中）</p>
+            <p><strong>デザイン：</strong>Figma / UI・UXデザイン（基礎）</p>
+            <p><strong>その他：</strong>レスポンシブデザイン / LP制作</p>
+            <p><strong>ツール：</strong>GitHub / VS Code / ChatGPT</p>
           </div>
+        </div>
+        </section>
 
-          <div class="fill-block">
-            <div class="fill-label">連絡先 <span class="optional">任意</span></div>
-            <div class="fill-content">
-              <p>なし（現在準備中）</p>
-            </div>
+        <section class="section" id="links">
+          <h2 class="section-title">
+            <span class="section-icon">
+              <span class="material-symbols-outlined">link</span>
+            </span>
+            リンク
+          </h2>
+        </section>
+
+        <div class="fill-block">
+          <div class="fill-label">GitHub <span class="required">必須</span></div>
+          <div class="fill-content">
+            <p>https://github.com/202510-aw-kudo</p>
           </div>
+        </div>
+
+        <div class="fill-block">
+          <div class="fill-label">連絡先 <span class="optional">任意</span></div>
+          <div class="fill-content">
+            <p>なし（現在準備中）</p>
+          </div>
+        </div>
         </section>
 
       </div>
